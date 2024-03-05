@@ -1,0 +1,26 @@
+/* COULEUR */
+:root {
+    --rose: #FA00FF;
+    --purpul: #8A00DF;
+    --black: #000;
+    --white: #fff;
+    --blue: #3E08D9;
+}
+
+/* CONTAINER */
+.container-width {
+    width: calc(100% - 80px);
+    margin-left: 40px;
+}
+
+@media screen and (max-width: 950px) {
+    .container-width {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+    }
+}
+/* HEADER */
+
+/* FOOTER */
+
+/*  BUTTUNS */
