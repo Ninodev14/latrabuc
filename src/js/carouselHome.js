@@ -6,6 +6,27 @@ document.addEventListener('DOMContentLoaded', function () {
     const nextBtn = document.querySelector('.next');
 
     let currentIndex = 0;
+// Récupérez la référence du conteneur du carrousel
+const carousel = document.getElementById('carousel');
+
+carousel.addEventListener('touchstart', function(event) {
+    touchstartX = event.changedTouches[0].screenX;
+});
+
+carousel.addEventListener('touchend', function(event) {
+    touchendX = event.changedTouches[0].screenX;
+    handleGesture();
+});
+
+function handleGesture() {
+    if (touchendX < touchstartX) {
+        nextSlide();
+    }
+    
+    if (touchendX > touchstartX) {
+        prevSlide();
+    }
+}
 
     function showSlide(index) {
         slides.forEach((slide) => {
@@ -72,3 +93,4 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 });
+
