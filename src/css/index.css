@@ -44,8 +44,9 @@ flex-direction: row-reverse;
 
 .carousel {
     display: flex;
-    transition: transform 0.5s ease;
 
+    transition: transform 0.5s ease;
+    overflow: hidden; /* Empêche le dépassement du contenu */
 }
 
 
@@ -62,6 +63,13 @@ flex-direction: row-reverse;
     transform: translateY(-50%);
     cursor: pointer;
     font-size: 24px;
+}
+
+.carousel-slide img {
+    max-width: 100%; 
+    height: auto; /* Garantit que les images conservent leur proportion */
+    display: block; /* Évite les problèmes d'alignement vertical */
+    margin: 0 auto; 
 }
 
 .prev {
