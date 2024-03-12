@@ -1,3 +1,5 @@
+/* IMG HEADER */
+
 .background-home-img {
     background-image: url('../images/bagnouil.png');
     background-size: cover;
@@ -18,83 +20,22 @@
     margin-top: calc(100vh + 82px);
 }
 
+/* CONTAINER */
+
 .container-paragraph-text{
     margin-bottom: 82px;
     width: 75%;
 }
 
-.container-paragraph-text-left h2{
-    margin-bottom: 38px;
-}
 .container-paragraph-text-right {
 display: flex;
 text-align: right;
 flex-direction: row-reverse;
 }
 
-/* CAROUSELLE */
+@media screen and (max-width: 825px) {
+    .container-paragraph-text{
 
-.container-home-carousel {
-    margin-bottom: 86px;
-    position: relative;
-    overflow: hidden;
-
-    background-color: gray;
-}
-
-.carousel {
-    display: flex;
-
-    transition: transform 0.5s ease;
-    overflow: hidden; /* Empêche le dépassement du contenu */
-}
-
-
-.carousel-slide {
-    display: flex;
-    justify-content: center;
-    flex: 0 0 100%;
-    transition: transform 0.5s ease;
-}
-
-.carousel-control {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    font-size: 24px;
-}
-
-.carousel-slide img {
-    max-width: 100%; 
-    height: auto; /* Garantit que les images conservent leur proportion */
-    display: block; /* Évite les problèmes d'alignement vertical */
-    margin: 0 auto; 
-}
-
-.prev {
-    left: 0;
-}
-
-.next {
-    right: 0;
-}
-
-.carousel-dots {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.dot {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 0 5px;
-    background-color: #bbb;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.dot.active {
-    background-color: #717171;
+        width: 100%;
+    }
 }

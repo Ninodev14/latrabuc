@@ -1,0 +1,38 @@
+.container-contact-localisation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 82px;
+}
+
+.container-contact-localisation-text {
+    width: 40%;
+}
+
+.container-contact-localisation-map {
+    width: 40%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.maps {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Pour centrer verticalement */
+    flex: 0 0 33.33%; /* Pour afficher trois images par ligne */
+    transition: transform 0.3s ease; /* Réduction de la durée de transition */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.3s ease; /* Réduction de la durée de transition */
+    overflow: hidden;
+    width: 300%; /* Ajustez en fonction du nombre d'images à afficher */
+}
+
+

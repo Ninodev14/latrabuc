@@ -108,11 +108,11 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Auto slide
+
     function startAutoSlide() {
         autoSlideInterval = setInterval(() => {
             nextSlide();
-        }, 5000); // 
+        }, 5000); 
     }
 
     function stopAutoSlide() {
