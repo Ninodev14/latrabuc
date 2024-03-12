@@ -6,27 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const nextBtn = document.querySelector('.next');
 
     let currentIndex = 0;
-// Récupérez la référence du conteneur du carrousel
-const carousel = document.getElementById('carousel');
-
-carousel.addEventListener('touchstart', function(event) {
-    touchstartX = event.changedTouches[0].screenX;
-});
-
-carousel.addEventListener('touchend', function(event) {
-    touchendX = event.changedTouches[0].screenX;
-    handleGesture();
-});
-
-function handleGesture() {
-    if (touchendX < touchstartX) {
-        nextSlide();
-    }
-    
-    if (touchendX > touchstartX) {
-        prevSlide();
-    }
-}
 
     function showSlide(index) {
         slides.forEach((slide) => {
@@ -73,6 +52,9 @@ function handleGesture() {
     // Swipe functionality
     let touchstartX = 0;
     let touchendX = 0;
+    const minSwipeDistance = 50; // La distance minimale de glissement pour déclencher le changement de diapositive
+
+    const carousel = document.getElementById('carousel');
 
     carousel.addEventListener('touchstart', function(event) {
         touchstartX = event.changedTouches[0].screenX;
@@ -83,14 +65,45 @@ function handleGesture() {
         handleGesture();
     });
 
-    function handleGesture() {
-        if (touchendX < touchstartX) {
-            nextSlide();
+    carousel.addEventListener('mousedown', function(event) {
+        isDragging = true;
+        mouseX = event.clientX;
+        mouseY = event.clientY;
+    });
+
+    carousel.addEventListener('mousemove', function(event) {
+        if (isDragging) {
+            event.preventDefault();
         }
-        
-        if (touchendX > touchstartX) {
-            prevSlide();
+    });
+
+    carousel.addEventListener('mouseup', function(event) {
+        if (isDragging) {
+            const distanceX = event.clientX - mouseX;
+            const distanceY = event.clientY - mouseY;
+            if (Math.abs(distanceX) >= minSwipeDistance && Math.abs(distanceX) > Math.abs(distanceY)) {
+                if (distanceX < 0) {
+                    nextSlide();
+                } else {
+                    prevSlide();
+                }
+            }
+            isDragging = false;
+        }
+    });
+
+    carousel.addEventListener('mouseleave', function(event) {
+        isDragging = false;
+    });
+
+    function handleGesture() {
+        const distanceX = touchendX - touchstartX;
+        if (Math.abs(distanceX) >= minSwipeDistance) {
+            if (touchendX < touchstartX) {
+                nextSlide();
+            } else {
+                prevSlide();
+            }
         }
     }
 });
-
