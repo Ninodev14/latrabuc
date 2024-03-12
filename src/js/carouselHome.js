@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const nextBtn = document.querySelector('.next');
 
     let currentIndex = 0;
+    let autoSlideInterval;
 
     function showSlide(index) {
         slides.forEach((slide) => {
@@ -106,4 +107,20 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     }
+
+    // Auto slide
+    function startAutoSlide() {
+        autoSlideInterval = setInterval(() => {
+            nextSlide();
+        }, 5000); // 
+    }
+
+    function stopAutoSlide() {
+        clearInterval(autoSlideInterval);
+    }
+
+    startAutoSlide();
+
+    carousel.addEventListener('mouseenter', stopAutoSlide);
+    carousel.addEventListener('mouseleave', startAutoSlide);
 });
