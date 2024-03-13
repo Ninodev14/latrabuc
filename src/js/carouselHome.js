@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const dotsContainer = document.querySelector('.carousel-dots');
     const prevBtn = document.querySelector('.prev');
     const nextBtn = document.querySelector('.next');
+    const carousel = document.getElementById('carousel');
 
     let currentIndex = 0;
     let autoSlideInterval;
@@ -24,12 +25,14 @@ document.addEventListener('DOMContentLoaded', function () {
         currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
         showSlide(currentIndex);
         updateDots(currentIndex);
+        startAutoSlide();
     }
 
     function nextSlide() {
         currentIndex = (currentIndex + 1) % totalSlides;
         showSlide(currentIndex);
         updateDots(currentIndex);
+        startAutoSlide();
     }
 
     prevBtn.addEventListener('click', prevSlide);
@@ -43,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
             showSlide(i);
             currentIndex = i;
             updateDots(i);
+            startAutoSlide();
         });
         dotsContainer.appendChild(dot);
     }
@@ -54,8 +58,6 @@ document.addEventListener('DOMContentLoaded', function () {
     let touchstartX = 0;
     let touchendX = 0;
     const minSwipeDistance = 50; // La distance minimale de glissement pour déclencher le changement de diapositive
-
-    const carousel = document.getElementById('carousel');
 
     carousel.addEventListener('touchstart', function(event) {
         touchstartX = event.changedTouches[0].screenX;
@@ -108,11 +110,11 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-
     function startAutoSlide() {
+        stopAutoSlide();
         autoSlideInterval = setInterval(() => {
             nextSlide();
-        }, 5000); 
+        }, 5000);
     }
 
     function stopAutoSlide() {
