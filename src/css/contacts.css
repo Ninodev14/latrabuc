@@ -4,15 +4,25 @@
     margin-bottom: 82px;
 }
 
-.container-contact-localisation-text {
-    width: 40%;
-}
-
 .container-contact-localisation-map {
-    width: 40%;
+    width: 50%;
     height: auto;
     position: relative;
     overflow: hidden;
+}
+
+.container-contact-localisation-text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+}
+
+.contact-localisation-img img {
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
 }
 
 .maps {
@@ -43,17 +53,21 @@
     .container-contact-partenaire-content {
         width: 46%;
     }
+
     .container-contact-localisation {
         flex-direction: column;
     }
+
     .container-contact-localisation-map {
         width: 100%;
         height: 300px;
     }
+
     .container-contact-localisation-text {
         width: 100%;
     }
 }
+
 @media screen and (max-width: 550px) {
     .container-contact-partenaire-content {
         width: 100%;

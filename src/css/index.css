@@ -3,7 +3,14 @@
 .background-home-img {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 100%;
+    margin-top: 70px;
+}
+
+@media screen and (max-width: 950px) {
+    .background-home-img {
+        margin-top: 0px;
+    }
 }
 
 /*Text img */
@@ -29,7 +36,8 @@
     width: 50%;
     margin-top: -50px;
 }
-.container-text-home-intro-text{
+
+.container-text-home-intro-text {
     display: flex;
     text-align: center;
 }
@@ -41,12 +49,14 @@
     font-weight: 700;
     line-height: normal;
 }
+
 @media screen and (max-width: 950px) {
     .container-text-home-intro img {
         margin-top: -40px;
         width: 100%;
     }
 }
+
 /* CONTAINER */
 
 .container-paragraph-text {
@@ -62,7 +72,6 @@
 
 @media screen and (max-width: 950px) {
     .container-paragraph-text {
-
         width: 100%;
     }
 }
@@ -86,7 +95,6 @@
 
 .carousel-slide {
     display: flex;
-    
     justify-content: center;
     flex: 0 0 100%;
     transition: transform 0.5s ease;
@@ -141,11 +149,12 @@
     width: 40px;
     height: auto;
 }
+
 @media screen and (max-width: 1440px) {
     .prev {
         left: 2vw;
     }
-    
+
     .next {
         right: 2vw;
     }
@@ -155,10 +164,11 @@
     .prev {
         left: 30px;
     }
-    
+
     .next {
         right: 30px;
     }
+
     .prev img,
     .next img {
         width: 30px;
@@ -179,12 +189,14 @@
         transition: transform 0.5s ease;
         overflow: hidden;
     }
+
     .carousel-slide img {
         margin-left: 0%;
         max-width: 100%;
 
-    
+
     }
+
     .container-text-home-intro h1 {
         font-size: 40px;
     }
