@@ -129,11 +129,11 @@
 }
 
 .prev {
-    left: 10px;
+    left: 6vw;
 }
 
 .next {
-    right: 10px;
+    right: 6vw;
 }
 
 .prev img,
@@ -141,9 +141,24 @@
     width: 40px;
     height: auto;
 }
+@media screen and (max-width: 1440px) {
+    .prev {
+        left: 2vw;
+    }
+    
+    .next {
+        right: 2vw;
+    }
+}
 
 @media screen and (max-width: 950px) {
-
+    .prev {
+        left: 30px;
+    }
+    
+    .next {
+        right: 30px;
+    }
     .prev img,
     .next img {
         width: 30px;
