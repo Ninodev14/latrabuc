@@ -116,3 +116,10 @@ nav {
 
 /* FOOTER */
 
+
+/* Aparition */
+
+.apparition {
+
+    transition: opacity 0.8s, transform 0.8s;
+}
