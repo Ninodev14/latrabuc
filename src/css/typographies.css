@@ -1,12 +1,16 @@
 @font-face {
     font-family: 'Lobster';
     src: url('Lobster-Regular.ttf') format('woff2');
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: 'Helvetica';
     src: url('Helvetica.ttf') format('woff2');
-  }
-
+}
+@font-face {
+    font-family: 'Amatic SC';
+    src: url('AmaticSC-Bold.ttf') format('woff2');
+}
 h1 {
     color: #000;
     font-family: Lobster, sans-serif;
@@ -33,7 +37,7 @@ h3 {
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;    
+    line-height: normal;
 }
 
 
@@ -46,15 +50,13 @@ p {
     line-height: normal;
 }
 
-a {
-
-}
+a {}
 
 @media screen and (max-width: 950px) {
     h1 {
         font-size: 40px;
     }
-    
+
     h2 {
         font-size: 30px;
     }

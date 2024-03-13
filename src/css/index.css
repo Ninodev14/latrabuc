@@ -6,21 +6,36 @@
     height: auto;
 }
 
+/*Text img */
+.container-text-home-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-text-home-intro h1 {
+    font-family: "Amatic SC";
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
 /* CONTAINER */
 
-.container-paragraph-text{
+.container-paragraph-text {
     margin-bottom: 82px;
     width: 58.3%;
 }
 
 .container-paragraph-text-right {
-display: flex;
-text-align: right;
-flex-direction: row-reverse;
+    display: flex;
+    text-align: right;
+    flex-direction: row-reverse;
 }
 
 @media screen and (max-width: 950px) {
-    .container-paragraph-text{
+    .container-paragraph-text {
 
         width: 100%;
     }
@@ -113,8 +128,9 @@ flex-direction: row-reverse;
         margin-top: 40px;
         width: 100%;
     }
+
     .carousel {
-        width: 100% ;
+        width: 100%;
         margin-left: 0px;
         display: flex;
         transition: transform 0.5s ease;
