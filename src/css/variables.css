@@ -1,11 +1,12 @@
 /* COULEUR */
 :root {
     --orange: #ff8400;
+    --gray: #1C1C1C;
 }
 
 /* CONTAINER */
 .container-width {
-    margin-top: 108px;
+    margin-top: 82px;
     width: calc(100% - 120px);
     margin-left: 60px;
 }
