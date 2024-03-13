@@ -73,3 +73,28 @@
         width: 100%;
     }
 }
+
+.container-contact-friend-title {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.container-contact-friend-title,
+.left {
+    margin-right: 20px;
+}
+
+.container-contact-friend-title,
+.right {
+    margin-left: 20px;
+}
+
+.container-contact-friend-title h1 {
+    font-family: "Amatic SC";
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}

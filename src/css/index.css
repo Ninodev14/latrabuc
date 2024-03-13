@@ -40,6 +40,16 @@
 .container-text-home-intro-text {
     display: flex;
     text-align: center;
+    justify-content: center;
+}
+.container-text-home-intro-text,
+.left {
+    margin-right: 20px;
+}
+
+.container-text-home-intro-text,
+.right {
+    margin-left: 20px;
 }
 
 .container-text-home-intro h1 {
