@@ -113,6 +113,7 @@ nav {
         height: auto;
     }
 }
+
 /* CONTENAIRE EVENT+CONTACT */
 .projet-list {
     padding-top: 41px;
@@ -155,13 +156,14 @@ nav {
     width: calc(100% - 50px);
 }
 
-.projet-list-top{
+.projet-list-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 38px;
 }
-.projet-list-top h2{
+
+.projet-list-top h2 {
     margin-bottom: 0px;
 }
 
@@ -203,6 +205,101 @@ nav {
 }
 
 /* FOOTER */
+footer {
+    border-top: 2px solid #F0B019;
+    background-color: white;
+    width: 100vw;
+}
+
+footer p {
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+footer .reseaux img {
+    width: 40px;
+    height: auto;
+}
+
+.footer-espacment {
+    margin-left: 60px;
+}
+
+.footer-container {
+    display: flex;
+    width: 60%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-container-component {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+
+}
+
+.footer-container-component .first {
+    margin-bottom: 40px;
+}
+
+.footer-container-component-last {
+    margin-left: 50px;
+}
+
+.footer-container-component-last p {
+    margin-bottom: 4px;
+}
+
+.first-under {
+    margin-bottom: 10px;
+}
+
+.footer-img {
+    margin-bottom: 6px;
+    display: flex;
+}
+
+.footer-img img {
+    height: 80px;
+    width: auto;
+}
+
+@media screen and (max-width: 980px) {
+    .footer-espacment {
+        margin-left: 20px;
+        width: calc(100% - 40px);
+    }
+
+    .footer-container {
+        text-align: center;
+        width: 100%;
+        flex-direction: column
+    }
+
+    .footer-container-component-last {
+        margin-left: 0px;
+    }
+
+    .footer-container-component {
+        align-items: center;
+        margin-bottom: 36px;
+    }
+    .footer-img img {
+        height: auto;
+        margin-bottom: 5px;
+        width: 96%;
+    }
+    .footer-img {
+        height: auto;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-women {
+        width: 40% !important;
+    }
+}
 
 
 /* Aparition */
@@ -214,31 +311,32 @@ nav {
 
 /* ESPACEMENT */
 
-.espacement-large{
+.espacement-large {
     margin-top: 210px;
 }
 
-.espacement-mid{
+.espacement-mid {
     margin-top: 150px;
 }
 
-.espacement-short{
+.espacement-short {
     margin-top: 60px;
 }
 
-.espacement-super-short{
+.espacement-super-short {
     margin-top: 40px;
 }
 
-.espacement-header{
+.espacement-header {
     margin-top: 120px;
 }
 
 @media screen and (max-width: 980px) {
-    .espacement-large{
+    .espacement-large {
         margin-top: 150px;
     }
-    .espacement-header{
+
+    .espacement-header {
         margin-top: 40px;
     }
-    }
+}
