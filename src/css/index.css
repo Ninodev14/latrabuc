@@ -41,6 +41,7 @@
     text-align: center;
     justify-content: center;
 }
+
 .container-text-home-intro-text,
 .left {
     margin-right: 20px;
@@ -206,5 +207,17 @@
 
     .container-text-home-intro h1 {
         font-size: 40px;
+    }
+}
+
+.cascade-text-index {
+    position: absolute;
+    right: 10px;
+    width: auto;
+}
+
+@media screen and (max-width: 950px) {
+    .cascade-text-index {
+        display: none;
     }
 }
