@@ -97,3 +97,20 @@
     font-weight: 700;
     line-height: normal;
 }
+
+.contact-friend .projet-list {
+    flex-direction: row-reverse;
+}
+
+.contact-friend .projet-list img{
+margin-right: 20px;
+}
+
+@media screen and (max-width: 980px) {
+    .contact-friend .projet-list {
+        flex-direction: column-reverse;
+    }
+    .contact-friend .projet-list img{
+        margin-right: 0px;
+        }
+}
