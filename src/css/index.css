@@ -19,7 +19,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 82px;
     width: 100%;
 }
 
@@ -34,7 +33,7 @@
 .container-text-home-intro img {
     height: auto;
     width: 50%;
-    margin-top: -50px;
+    margin-top: -16px;
 }
 
 .container-text-home-intro-text {
@@ -62,7 +61,7 @@
 
 @media screen and (max-width: 950px) {
     .container-text-home-intro img {
-        margin-top: -40px;
+        margin-top: -8px;
         width: 100%;
     }
 }
@@ -70,7 +69,6 @@
 /* CONTAINER */
 
 .container-paragraph-text {
-    margin-top: 82px;
     width: 58.3%;
 }
 
@@ -89,7 +87,6 @@
 /* CAROUSELLE */
 
 .container-home-carousel {
-    margin-bottom: 86px;
     position: relative;
     overflow: hidden;
 }

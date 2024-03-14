@@ -1,7 +1,6 @@
 .container-contact-localisation {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 82px;
 }
 
 .container-contact-localisation-map {
