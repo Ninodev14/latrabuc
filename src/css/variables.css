@@ -52,6 +52,7 @@ nav {
     opacity: 0;
     transition: opacity 0.3s;
     position: relative;
+    background-color: white;
 }
 
 .menu-tel-nav {
