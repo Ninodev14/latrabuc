@@ -80,15 +80,7 @@
     justify-content: center;
 }
 
-.container-contact-friend-title,
-.left {
-    margin-right: 20px;
-}
 
-.container-contact-friend-title,
-.right {
-    margin-left: 20px;
-}
 
 .container-contact-friend-title h1 {
     font-family: "Amatic SC";
@@ -113,4 +105,8 @@ margin-right: 20px;
     .contact-friend .projet-list img{
         margin-right: 0px;
         }
+        
+        .container-contact-friend-title h1 {
+        font-size: 40px;
+    }
 }
