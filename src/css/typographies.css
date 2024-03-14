@@ -11,6 +11,11 @@
     font-family: 'Amatic SC';
     src: url('AmaticSC-Bold.ttf') format('woff2');
 }
+@font-face {
+    font-family: 'Gotham';
+    src: url('Gotham-Medium.woff') format('woff2');
+}
+
 h1 {
     color: #000;
     font-family: Lobster, sans-serif;
@@ -31,11 +36,14 @@ h2 {
 
 h3 {
     color: #000;
-    font-family: Helvetica;
-    font-size: 20px;
+
+    /* V2 typo/HEADER */
+    font-family: Gotham;
+    font-size: 21px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-transform: capitalize;
 }
 
 

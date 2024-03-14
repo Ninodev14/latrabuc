@@ -42,6 +42,11 @@ nav {
     width: calc(100% - 160px);
 }
 
+#menu-pc img{
+    width: auto;
+    height: 80%;
+}
+
 #menu-tel {
     overflow-y: auto;
     display: none;
