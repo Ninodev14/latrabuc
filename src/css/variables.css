@@ -77,6 +77,15 @@ nav {
     transition: transform 0.3s ease;
 }
 
+.backgroung-togle{
+    right:  0;
+    position: absolute;
+    background-color: white;
+    height: 64px;
+    width: 70px;
+    border-bottom-left-radius: 8px;
+}
+
 #menu-toggle {
     margin-top: 20px;
     height: 20px;
@@ -87,10 +96,14 @@ nav {
     position: fixed;
     cursor: pointer;
     z-index: 1001;
+
+
 }
 
 #menu-toggle.active .barre-toggle:nth-child(1) {
     transform: rotate(45deg) translate(6px, 5px);
+    border: 0px solid black;
+    background-color: black;
 }
 
 #menu-toggle.active .barre-toggle:nth-child(2) {
@@ -98,7 +111,8 @@ nav {
 }
 
 #menu-toggle.active .barre-toggle:nth-child(3) {
-
+    border: 0px solid black;
+    background-color: black;
     transform: rotate(-45deg) translate(6px, -5px);
 }
 
