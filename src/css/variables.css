@@ -259,6 +259,9 @@ footer .reseaux img {
 
 .first-under {
     margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
 }
 
 .footer-img {
@@ -268,7 +271,7 @@ footer .reseaux img {
 }
 
 .footer-img img {
-    margin-right: 10px;
+    margin-right: 30px;
     height: 80px;
     width: auto;
 }
@@ -313,6 +316,11 @@ footer .reseaux img {
 
     .footer-women {
         width: 40% !important;
+    }
+    .first-under {
+        display: flex;
+        justify-content: center;
+        margin-right: 0px;
     }
 }
 
