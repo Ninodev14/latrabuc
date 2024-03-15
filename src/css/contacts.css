@@ -92,6 +92,8 @@
 
 .contact-friend .projet-list {
     flex-direction: row-reverse;
+    justify-content: flex-end;
+
 }
 
 .contact-friend .projet-list img{
