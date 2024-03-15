@@ -42,7 +42,7 @@ nav {
     width: calc(100% - 160px);
 }
 
-#menu-pc img{
+#menu-pc img {
     width: auto;
     height: 80%;
 }
@@ -213,7 +213,7 @@ nav {
 footer {
     border-top: 2px solid #F0B019;
     background-color: white;
-    width: 100vw;
+    width: 100%;
 }
 
 footer p {
@@ -264,9 +264,11 @@ footer .reseaux img {
 .footer-img {
     margin-bottom: 6px;
     display: flex;
+    justify-content: flex-end;
 }
 
 .footer-img img {
+    margin-right: 10px;
     height: 80px;
     width: auto;
 }
@@ -291,16 +293,24 @@ footer .reseaux img {
         align-items: center;
         margin-bottom: 36px;
     }
+
     .footer-img img {
         height: auto;
         margin-bottom: 5px;
         width: 96%;
     }
+
     .footer-img {
         height: auto;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
     }
+
+    .footer-img img {
+        margin-left: 0px;
+    }
+
     .footer-women {
         width: 40% !important;
     }

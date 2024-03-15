@@ -214,9 +214,10 @@
     position: absolute;
     right: 10px;
     width: auto;
+    height: auto;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1286px) {
     .cascade-text-index {
         display: none;
     }
