@@ -19,7 +19,6 @@ function verifierAge() {
         if (confirmation) {
             // Définir un cookie pour indiquer que l'âge a été vérifié
             document.cookie = "ageVerifie=oui; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
-            alert("Bienvenue !");
         } else {
             alert("Désolé, vous devez avoir 18 ans ou plus pour accéder à ce contenu.");
         }
