@@ -26,10 +26,7 @@ function verifierAge() {
     }
 }
 
-// Appeler la fonction de vérification de l'âge
-verifierAge();
-
-
-// Appeler la fonction de vérification de l'âge
 etudcheck();
 verifierAge();
+
+
