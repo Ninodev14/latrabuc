@@ -336,6 +336,9 @@ footer .reseaux img {
         justify-content: center;
         margin-right: 0px;
     }
+    .footer-img img {
+        margin-right: 0px;
+    }
 }
 
 
